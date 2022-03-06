@@ -1,0 +1,35 @@
+$color-light: #fff;
+$color-main: #f0145a;
+$color-add: #24a3ff;
+$color-add2: #b3b3ba;
+$color-add3: #f5f5fa;
+$color-add4: #E6E6F0;
+
+$m-p: clamp(30px, calc(60 / 768 * 100vw), 60px);
+
+$fz-xs: 14;
+$fz-s: 14;
+$fz-m: 16;
+$fz-l: 30;
+$fz-xl: 38;
+$fz-xs-px: #{$fz-xs}px;
+$fz-s-px: #{$fz-s}px;
+$fz-m-px: #{$fz-m}px;
+$fz-l-px: #{$fz-l}px;
+$fz-xl-px: #{$fz-xl}px;
+
+$lh-xs: 17;
+$lh-s: 22;
+$lh-m: 20;
+$lh-l: 37;
+$lh-xl: 46;
+$lh-xs-px: #{$lh-xs}px;
+$lh-s-px: #{$lh-s}px;
+$lh-m-px: #{$lh-m}px;
+$lh-l-px: #{$lh-l}px;
+$lh-xl-px: #{$lh-xl}px;
+
+$clients: hillel #1c4280 36px, wanna-biz #143646 44px, tapgerine #f48b30 38px,
+  dlook #9e4dc3 39px, orangear #fd9339 38px, adtelligent #e2e2e4 36px,
+  clikky #c71c36 30px, ecoleasing #dcf3f9 22px, infra-tek #eaeaea 30px,
+  city-park #282240 41px, art-print #1d4568 37px, ultimate #000000 12px;

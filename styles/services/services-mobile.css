@@ -1,0 +1,181 @@
+@media screen and (max-width: 768px) {
+  /* -------------Header----------- */
+
+  .header {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .address-header,
+  .social-link,
+  .address-header::after,
+  .tel-header::after,
+  .social-link::after {
+    display: none;
+  }
+
+  .contacts-subsection {
+    justify-content: space-between;
+  }
+
+  .tel-header {
+    color: #fff;
+  }
+
+  .logo-subsection {
+    align-items: center;
+    padding: 2px 0;
+  }
+
+  .nav-bcg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 100%;
+    background-color: #323264;
+    opacity: 0.7;
+    z-index: 2;
+  }
+
+  #nav-trigger:checked ~ .nav-bcg {
+    transform: translateY(-100%);
+  }
+
+  .navigation-subsection {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 100%;
+    z-index: 3;
+    transition: transform 0.5s ease;
+  }
+
+  #nav-trigger:checked ~ .navigation-subsection {
+    transform: translateY(-100%);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 11px;
+    text-align: center;
+    background-color: #fff;
+    max-height: 100%;
+    overflow-y: auto;
+    margin-top: 0;
+    padding: 64px 20px 20px;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  .nav-menu-item {
+    background-color: #f5f5fa;
+    border-radius: 12px;
+    padding: 8px 0;
+  }
+
+  .nav-menu-link {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    color: #24a3ff;
+    border-bottom: none;
+  }
+
+  .nav-menu-link:hover,
+  .current-menu-link {
+    border-bottom: none;
+    color: hsl(341, 88%, 51%);
+  }
+
+  .nav-close,
+  .nav-open {
+    display: block;
+  }
+
+  /* -------- Section services ---------- */
+
+  .services-cards {
+    flex-direction: column;
+  }
+
+  .sevices-card {
+    flex-basis: auto;
+  }
+
+  .card-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* --------------Setion Cases -------------- */
+
+  .card-hillel {
+    padding-top: 20px;
+  }
+
+  /* ------------Section clients ------------*/
+
+  .clients-item {
+    flex-basis: 50%;
+  }
+
+  .orangear-logo-box {
+    order: 3;
+  }
+
+  .adtelligent-logo-box {
+    order: 8;
+  }
+
+  .clikky-logo-box {
+    order: 2;
+  }
+
+  .ecoleasing-logo-box {
+    order: 1;
+  }
+
+  .infra-tek-logo-box {
+    order: 4;
+  }
+
+  .city-park-logo-box {
+    order: 7;
+  }
+
+  .art-print-logo-box {
+    order: 6;
+  }
+
+  .ultimate-card-logo-box {
+    order: 5;
+  }
+
+  /* ---------Footer------ */
+
+  .footer-container {
+    padding: 23px 20px 118px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+  }
+
+  .contacts-footer {
+    flex-basis: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+  }
+
+  .map-footer {
+    margin-top: -10px;
+  }
+
+  .address-footer::after,
+  .tel-footer::after,
+  .fb-footer::after {
+    display: none;
+  }
+}

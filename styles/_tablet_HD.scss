@@ -1,0 +1,94 @@
+/* Tablet HD */
+@media screen and (min-width: 1024px) {
+  /* ----- HERO (and header) ----- */
+
+  .header__container {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .header__contacts {
+      align-items: flex-start;
+    }
+
+    .header-nav {
+      position: absolute;
+      top: 41px;
+      right: 60px;
+
+      .header-nav__list {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .hero__slogan {
+    margin-top: calc(50vh - 139px);
+  }
+
+  /* ----- EXPERIENCE- ----- */
+
+  .experience .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .experience {
+    &__list {
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 14px 0;
+      border-right: 4px solid rgba(255, 255, 255, 0.3);
+      padding-right: 60px;
+    }
+
+    &__description {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  /* ----- SERVICES- ----- */
+  .services__cards-list .services__card {
+    flex-basis: calc(100% / 3 - 60px);
+  }
+
+  /* =========== TEAM ========= */
+
+  .team-card {
+    flex-direction: row;
+    min-height: 298px;
+
+    &__img-cover {
+      flex-basis: 400px;
+      position: relative;
+
+      .team-card__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+    }
+
+    &__description {
+      flex-grow: 1;
+      flex-basis: 504px;
+    }
+  }
+
+  /* ======= CLIENTS SECTION ======= */
+
+  .clients__list-item {
+    flex-basis: calc(100% / 4);
+  }
+
+  /* =========== PUBLICATIONS SECTION ========== */
+
+  .publications__card,
+  .publications__card:last-child {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}

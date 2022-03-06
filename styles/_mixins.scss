@@ -1,0 +1,28 @@
+@mixin container($cp: $m-p, $mw: 1660px) {
+  max-width: $mw;
+  margin: 0 auto;
+  padding: 0 $cp;
+}
+
+@mixin shadow($pos-t: 100%, $pos-lr: 20px, $shadow-bgc: #cacadb) {
+  content: "";
+  position: absolute;
+  top: $pos-t;
+  right: $pos-lr;
+  left: $pos-lr;
+  height: 10px;
+  background-color: $shadow-bgc;
+  border-radius: 0px 0px 12px 12px;
+}
+
+@mixin main-title-gradient($color1: $color-main, $color2: #ef8080) {
+  background-image: linear-gradient(90.13deg, $color1 0.84%, $color2 99.96%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin clients($bgc, $cl-p) {
+  background-color: $bgc;
+  padding: $cl-p 0;
+}

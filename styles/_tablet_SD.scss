@@ -1,0 +1,176 @@
+/* Tablet SD */
+@media screen and (min-width: 768px) {
+  .container {
+    @include container($mw: 1720px);
+  }
+
+  /* ----- HERO (and header) ----- */
+  .hero {
+    padding-top: 50px;
+  }
+
+  .header {
+    &__container {
+      gap: 30px;
+    }
+
+    &__contacts {
+      justify-content: flex-start;
+      padding: 0;
+      background: none;
+
+      .header__address,
+      .header__social,
+      .header__phone-number {
+        display: flex;
+        align-items: center;
+      }
+
+      .header__address::after,
+      .header__phone-number::after,
+      .header__social::after {
+        display: block;
+      }
+    }
+
+    &__logo {
+      padding: 0;
+    }
+
+    &-nav {
+      position: static;
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+
+      &__close,
+      &__open,
+      &__bcg {
+        display: none;
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+
+        .header-nav__item {
+          background-color: transparent;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        .header-nav__link {
+          display: block;
+          font-size: $fz-m-px;
+          line-height: $lh-m-px;
+          font-weight: 700;
+          text-decoration: none;
+          color: $color-light;
+          border-bottom: 2px solid transparent;
+
+          &:hover {
+            border-bottom: 2px solid $color-light;
+            color: $color-light;
+          }
+        }
+      }
+    }
+  }
+
+  .hero__slogan {
+    margin-top: calc(50vh - 243px);
+  }
+
+  /* ----- SERVICES- ----- */
+  .services__cards-list .services__card {
+    flex-basis: calc(100% / 2 - 60px);
+  }
+
+  /* ======= CLIENTS SECTION ======= */
+
+  .clients__list-item {
+    flex-basis: calc(100% / 3);
+  }
+
+  .clients {
+    &__clikky,
+    &__ecoleasing,
+    &__infra-tek,
+    &__city-park,
+    &__art-print,
+    &__ultimate {
+      display: block;
+    }
+  }
+
+  /* =========== PUBLICATIONS SECTION ========== */
+
+  .publications__cards-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .publications__card {
+    flex-basis: calc(100% / 2 - 30px);
+
+    &:last-child {
+      flex-basis: 100%;
+    }
+  }
+
+  /* =========== FOOTER ========== */
+
+  .footer {
+    & .container {
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__address,
+    &__contacts {
+      flex-direction: row;
+      gap: normal;
+    }
+
+    &__address {
+      flex-basis: 50%;
+      flex-grow: 1;
+    }
+
+    &__contacts {
+      order: 2;
+      flex-basis: 100%;
+      flex-grow: 1;
+
+      &-social {
+        order: -1;
+      }
+    }
+
+    &__copyrights {
+      order: 1;
+      margin-top: 0;
+      flex-basis: auto;
+      align-items: flex-end;
+    }
+
+    &__address-link,
+    &__contacts-phone,
+    &__contacts-mail {
+      display: flex;
+      align-items: center;
+    }
+
+    &__address-link::before,
+    &__contacts-phone::before,
+    &__contacts-mail::before {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@media screen and (min-width: 1920px) {
+  /* =========== TEAM ========= */
+
+  .team-card__description {
+    flex-basis: 920px;
+  }
+
+  .clients-list {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* ======= CLIENTS SECTION ======= */
+  .clients__list {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* =========== PUBLICATIONS SECTION ========== */
+
+  .publications {
+    margin-top: 30px;
+  }
+}

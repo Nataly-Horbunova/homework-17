@@ -1,0 +1,15 @@
+  %main-title-text {
+    font-weight: bold;
+    font-size: clamp($fz-l-px, calc(#{$fz-xl} / 768 * 100vw), $fz-xl-px);
+    line-height: clamp($lh-l-px, calc(#{$lh-xl} / 768 * 100vw), $lh-xl-px);
+  }
+
+  %link-text {
+    text-decoration: none;
+    font-size: $fz-xs-px;
+    line-height: $lh-xs-px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-add;
+  }
